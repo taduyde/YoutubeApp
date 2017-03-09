@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D2CDE221E5160610096AF52 /* Video.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2CDE211E5160610096AF52 /* Video.m */; };
+		7D2CDE251E51612C0096AF52 /* VideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2CDE241E51612C0096AF52 /* VideoCell.m */; };
 		7DFEB7F51E5089500038FCE8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DFEB7F41E5089500038FCE8 /* main.m */; };
 		7DFEB7F81E5089500038FCE8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DFEB7F71E5089500038FCE8 /* AppDelegate.m */; };
 		7DFEB7FB1E5089500038FCE8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DFEB7FA1E5089500038FCE8 /* ViewController.m */; };
@@ -36,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7D2CDE201E5160610096AF52 /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		7D2CDE211E5160610096AF52 /* Video.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Video.m; sourceTree = "<group>"; };
+		7D2CDE231E51612C0096AF52 /* VideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoCell.h; sourceTree = "<group>"; };
+		7D2CDE241E51612C0096AF52 /* VideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoCell.m; sourceTree = "<group>"; };
 		7DFEB7F01E5089500038FCE8 /* YoutubeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoutubeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DFEB7F41E5089500038FCE8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7DFEB7F61E5089500038FCE8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -81,6 +87,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D2CDE1D1E515FBB0096AF52 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7D2CDE201E5160610096AF52 /* Video.h */,
+				7D2CDE211E5160610096AF52 /* Video.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7D2CDE1E1E515FDC0096AF52 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7D2CDE231E51612C0096AF52 /* VideoCell.h */,
+				7D2CDE241E51612C0096AF52 /* VideoCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		7D2CDE1F1E5160210096AF52 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7DFEB7F91E5089500038FCE8 /* ViewController.h */,
+				7DFEB7FA1E5089500038FCE8 /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		7DFEB7E71E5089500038FCE8 = {
 			isa = PBXGroup;
 			children = (
@@ -104,11 +137,12 @@
 		7DFEB7F21E5089500038FCE8 /* YoutubeApp */ = {
 			isa = PBXGroup;
 			children = (
+				7D2CDE1E1E515FDC0096AF52 /* View */,
+				7D2CDE1D1E515FBB0096AF52 /* Model */,
 				7DFEB8261E5090D80038FCE8 /* Services */,
 				7DFEB7F61E5089500038FCE8 /* AppDelegate.h */,
 				7DFEB7F71E5089500038FCE8 /* AppDelegate.m */,
-				7DFEB7F91E5089500038FCE8 /* ViewController.h */,
-				7DFEB7FA1E5089500038FCE8 /* ViewController.m */,
+				7D2CDE1F1E5160210096AF52 /* Controller */,
 				7DFEB7FC1E5089500038FCE8 /* Main.storyboard */,
 				7DFEB7FF1E5089500038FCE8 /* Assets.xcassets */,
 				7DFEB8011E5089500038FCE8 /* LaunchScreen.storyboard */,
@@ -287,8 +321,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DFEB7FB1E5089500038FCE8 /* ViewController.m in Sources */,
+				7D2CDE251E51612C0096AF52 /* VideoCell.m in Sources */,
 				7DFEB8291E50910D0038FCE8 /* HTTPService.m in Sources */,
 				7DFEB7F81E5089500038FCE8 /* AppDelegate.m in Sources */,
+				7D2CDE221E5160610096AF52 /* Video.m in Sources */,
 				7DFEB7F51E5089500038FCE8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -521,6 +557,7 @@
 				7DFEB81F1E5089510038FCE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7DFEB8201E5089510038FCE8 /* Build configuration list for PBXNativeTarget "YoutubeAppTests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +566,7 @@
 				7DFEB8221E5089510038FCE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7DFEB8231E5089510038FCE8 /* Build configuration list for PBXNativeTarget "YoutubeAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -537,6 +575,7 @@
 				7DFEB8251E5089510038FCE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
